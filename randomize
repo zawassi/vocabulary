@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ランダムフォーム選択</title>
+    <script>
+        function redirectToRandomForm() {
+            var forms = [
+                "https://forms.gle/SfxdJvLu8evkdE6u5",
+                "https://forms.gle/65g2JRMM35GqTWpf8",
+                "https://forms.gle/ZAZciGUQk85RHnmi7",
+                "https://forms.gle/VhER1z5wrjxNGU9S6",
+                "https://forms.gle/Q2VA2H2Dau7c2R4X7",
+                "https://forms.gle/rJERec3xaPAG13ty7",
+                "https://forms.gle/hoc4AQno1eGHH4nu7",
+                "https://forms.gle/xggABZJv4v242M8V7"
+            ];
+            var randomForm = forms[Math.floor(Math.random() * forms.length)];
+            window.location.href = randomForm;
+        }
+    </script>
+</head>
+<body onload="redirectToRandomForm()">
+    <p>リダイレクト中です...</p>
+</body>
+</html>
